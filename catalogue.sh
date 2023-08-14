@@ -15,5 +15,5 @@ mongo --host mongodb.brunda.online </app/schema/catalogue.js
 
 systemctl daemon-reload
 systemctl enable catalogue
-systemctl restart catalogue
+systemctl start catalogue
 
