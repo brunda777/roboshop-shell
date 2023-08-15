@@ -1,4 +1,4 @@
-cp catalogue.service /etc/system.d/system/catalogue.service
+cp catalogue.service /etc/systemd/system/catalogue.service
 cp mongo.repo /etc/yum.repos.d/mongo.repo
 curl -sL https://rpm.nodesource.com/setup_lts.x | bash
 yum install nodejs -y
@@ -6,9 +6,9 @@ useradd roboshop
 rm -rf /app
 mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
-cd/app
+cd /app
 unzip /tmp/catalogue.zip
-cd/app
+cd /app
 npm install
 
 yum install mongodb-org-shell -y
