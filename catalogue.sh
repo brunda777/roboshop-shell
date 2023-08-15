@@ -8,7 +8,7 @@ mkdir /app
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue.zip
 cd /app
 unzip /tmp/catalogue.zip
-cd /ap
+cd /app
 npm install
 
 yum install mongodb-org-shell -y
